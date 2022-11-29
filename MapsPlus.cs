@@ -23,7 +23,7 @@ namespace MapsPlusPlugin
         }
         void Start()
         {
-            Unbound.BuildLevel(Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("customlevel", typeof(MapsPlus).Assembly));
+            UnboundLib.Utils.LevelManager.RegisterMaps(Jotunn.Utils.AssetUtils.LoadAssetBundleFromResources("customlevel", typeof(MapsPlus).Assembly),ModName);
         }
 
         private void DrawGUI()
